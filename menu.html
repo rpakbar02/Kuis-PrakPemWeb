@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Kopi Santai</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="tail">
 </head>
 <body>
+    <div id="menu"></div>
     <header>
         <nav>
-            <!-- Buttons untuk filter: All, Coffee, Non-Coffee, Food, Snacks 
-             Gunakan elemen `<button>` dengan attribute `data-filter`-->
+            <div class="logo">
+                <h1>Kopi Santai</h1>
+                <p>Nikmati Setiap Tegukan</p>
+            </div>
+            <ul class="nav-links" >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-filter">
             <button data-filter="all" >All</button>
             <button data-filter="Coffee">Coffee</button>
             <button data-filter="Non-Coffee">Non-Coffee</button>
             <button data-filter="Food">Food</button>
             <button data-filter="Snacks">Snacks</button>
-        </nav>
-    </header>
-    <main>
-        <section class="menu">
-            <!-- Judul: "Daftar Menu Lengkap"
-   - Grid layout menampilkan minimal 12 item menu
-   - Setiap menu item menggunakan `<article>` dengan:
-     - Gambar menu (gunakan `<figure>` dan `<figcaption>`)
-     - Nama menu (gunakan `<h3>`)
-     - Kategori (attribute `data-category`)
-     - Deskripsi singkat
-     - Harga
-     - Tag "Best Seller" atau "New" jika ada (gunakan `<span>` atau `<mark>`) -->
+        </section>
+        <section class="main-menu">
             <h1>Daftar Menu Lengkap</h1>
-            <div class="menu-items">
+            <div class="main-menu-items">
                 <article data-category="Coffee">
                     <figure>
                         <img src="" alt="">
