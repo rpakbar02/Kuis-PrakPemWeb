@@ -59,8 +59,14 @@
 .grid-cols-subgrid {
   grid-template-columns: subgrid;
 }
+.flex-col {
+  flex-direction: column;
+}
 .flex-row {
   flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .justify-between {
   justify-content: space-between;

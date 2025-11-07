@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Kopi Santai</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="tail">
+    <link rel="stylesheet" href="css/output.css">
 </head>
 <body>
     <div id="menu"></div>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Kopi Santai</h1>
-                <p>Nikmati Setiap Tegukan</p>
+    <header class="flex flex-row justify-center">
+        <nav class="flex flex-row">
+            <div class="navbar-brand flex flex-col ">
+                <a href="index.html">
+                    <h2>Kopi Santai</h2>
+                    <h5>Nikmati Setiap Tegukan</h5>
+                </a>
             </div>
-            <ul class="nav-links" >
+            <ul class="flex flex-row justify-end-safe">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
             </ul>
-        </nav>
+        </navca>
     </header>
     <main>
         <section class="menu-filter">
@@ -39,8 +41,8 @@
                         <img src="" alt="">
                         <figcaption></figcaption>
                     </figure>
-                    <h3></h3>
-                    <p></p>
+                    <h3>Cappucino</h3>
+                    <p>Harga: Rp. 15.000</p>
                     <p></p>
                     <span></span>
                 </article>
@@ -208,5 +210,37 @@
             </div>
         </section>
     </main>
+    <footer class="flex flex-row justify-center">
+        <div class="contacts">
+            <address>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Alamat: Jl. Raya No. 1, Jakarta, Indonesia</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Telepon: +62 123-456-7890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: 0oE7y@example.com</p>
+                </div>
+            </address>
+        </div>
+        <div class="operating-hours">
+            <h3>Jam Operasional:</h3>
+            <p>Senin - Jumat: 09:00 - 22:00</p>
+            <p>Sabtu - Minggu: 10:00 - 23:00</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Kopi Santai. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
