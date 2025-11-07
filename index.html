@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kopi Santai</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/output.css">
 </head>
 <body>
     <div id="Home"></div>
-    <header>
-        <nav class="navbar navbar-expand-lg ">
+    <header class="flex flex-row justify-center">
+        <nav class="flex flex-row">
             <div class="navbar-brand">
                 <a href="index.html">
                     <h1>Kopi Santai</h1>
                     <p>Nikmati Setiap Tegukan</p>
                 </a>
             </div>
-            <ul class="nav-links">
+            <ul class="flex flex-row justify-end-safe">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
@@ -25,16 +25,17 @@
             </ul>
         </navca>
     </header>
-    <main>
-        <section class="hero">
+    <main class="grid grid-cols-12 gap-4">
+        <section class="hero col-span-12 gap-4 flex flex-row">
             <h1>Selamat Datang di Kopi Santai</h1>
-            <h2>Tempat Terbaik untuk Bersantai dengan Secangkir kopi</h2>
+            <h2>Tempat Terbaik untuk Bersantai dengan Secangkir kopi
+            </h2>
             <a href="menu.html" class="btn">Lihat Menu</a>
             <a href="#Reservation" class="btn">Reservasi Sekarang</a>
         </section>
-        <section class="menu">
+        <section class="menu col-span-10 col-start-2 gap-4">
             <h2>Menu Favorit Kami</h2>
-            <div class="menu-items">
+            <div class="menu-items flex flex-row justify-center">
                 <div class="menu-item">
                     <img src="" alt="">
                     <h3>Cappucino</h3>
@@ -61,7 +62,7 @@
                 </div>
             </div>
         </section>
-        <section class="usp">
+        <section class="usp col-span-10 col-start-2 gap-4">
             <h2>Kenapa Memilih Kami?</h2>
             <article>
                 <div class="usp-item">
@@ -82,7 +83,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="flex flex-row justify-center">
         <div class="contacts">
             <address>
                 <div class="contact-item">

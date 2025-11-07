@@ -3,6 +3,12 @@ html,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 150%;
 }
 
 body {
@@ -33,6 +39,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
+    position: sticky;
+    top: 0
 }
 
 header h1 p{
@@ -73,21 +82,36 @@ a:active {
   color: #DAC0A3;
 }
 
-hero {
+.hero {
   background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
-  position: sticky;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   top: 0;
-  z-index: 999;
+  z-index: 998;
+  background-image: image('images\defocused-background-cozy-coffee-shop-600nw-2586235615.webp');
 }
 
-hero > ul {
+.hero > ul {
   list-style: none;
   display: flex;
   gap: 20px;
+}
+
+section {
+    padding: 100px 50px;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #102C57;
+    color: #FEFAF6;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.btn {
+    
 }
