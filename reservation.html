@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+</head>
+<body>
+    <div id="Reservation Info">
+        <section id="Reservation Info">
+        <h1>Reservasi Meja</h1>
+        <p>Untuk melakukan reservasi meja di Kopi Santai Caffee, silakan ikuti langkah-langkah berikut:</p>
+        <ul>
+            <li>Kunjungi halaman reservasi di situs web kami atau hubungi nomor telepon kami di +62 123 4567 890.</li>
+            <li>Pilih tanggal dan waktu yang Anda inginkan untuk reservasi.</li>
+            <li>Isi formulir reservasi dengan informasi yang diperlukan, termasuk nama, nomor telepon, dan jumlah tamu.</li>
+            <li>Kirimkan formulir dan tunggu konfirmasi dari tim kami melalui email atau telepon.</li>
+        </ul>
+    </div>
+
+    <div id="Reservation Form">
+        <section id="Reservation Form">
+        <h2>Formulir Reservasi</h2>
+        <form action="/submit_reservation" method="post">
+            <h3>Personal Information</h3>
+            <label for="name">Nama Lengkap:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="phone">Nomor Telepon:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <h3>Reservation Details</h3>
+            <label for="date">Tanggal Reservasi:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="time">Waktu Reservasi:</label><br>
+            <input type="time" id="time" name="time" required><br><br>
+            <label for="guests">Jumlah Tamu:</label><br>
+            <input type="number" id="guests" name="guests" min="1" required><br><br>
+            <label for="table type">Tipe Meja:</label><br>
+            <select id="table type" name="table type" required>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+            </select><br><br>
+            <h3>Additional Requests</h3>
+            <textarea id="requests" name="requests" rows="4" cols="50" placeholder="Masukkan permintaan tambahan di sini..."></textarea><br><br>
+            <label for="terms & agreement">Saya setuju dengan syarat dan ketentuan yang berlaku.</label>
+            <input type="checkbox" id="terms & agreement" name="terms & agreement" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <aside>
+            <h3>Catatan Penting</h3>
+            <ul>
+                <li>Reservasi harus dilakukan minimal 24 jam sebelum waktu yang diinginkan.</li>
+                <li>Harap datang tepat waktu untuk menghindari pembatalan otomatis.</li>
+                <li>Untuk perubahan atau pembatalan reservasi, silakan hubungi kami setidaknya 12 jam sebelumnya.</li>
+                <li>Reservasi juga dapat dilakukan dengan menghubungi nomor telepon atau whatsapp kami di +62 123 4567 890.</li>
+            </ul>
+        </aside>
+    </div>
+    
+</body>
+</html>
