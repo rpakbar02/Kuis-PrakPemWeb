@@ -4,19 +4,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Kopi Santai Caffee</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/output.css">
 </head>
 <body>
-    <header>
-        <h1>About Kopi Santai Caffee</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+    <div id="Home"></div>
+    <header class="flex flex-row justify-center">
+        <nav class="flex flex-row">
+            <div class="navbar-brand flex flex-col ">
+                <a href="index.html">
+                    <h2>Kopi Santai</h2>
+                    <h5>Nikmati Setiap Tegukan</h5>
+                </a>
+            </div>
+            <ul class="flex flex-row justify-end-safe">
+                <li><a href="#Home">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+        </navca>
     </header>
     <div class="Story">
         <h1>Cerita Kami</h1>
@@ -24,7 +30,7 @@
             "Nikmati Setiap Tegukan"
         </blockquote>
         <figure>
-            <img src="images/about.jpg" alt="About Us Image">
+            <img src="images/defocused-background-cozy-coffee-shop-600nw-2586235615.webp" alt="About Us Image">
             <figcaption>Kami adalah Kopi Santai Caffee, tempat di mana setiap tegukan kopi bercerita. Dengan biji kopi pilihan dan suasana yang nyaman, kami mengundang Anda untuk menikmati momen santai bersama teman atau sendiri.</figcaption>
         </figure>
         <h2>Sejarah Kami</h2>
@@ -51,27 +57,27 @@
         <section class="GallerySection">
         <h2>Galeri Kami</h2>
         <figure>
-            <img src="images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="images/pexels-traveliving-4760721.jpg" alt="Gallery Image 1">
             <figcaption>Suasana Kopi Santai Caffee</figcaption>
         </figure>
         <figure>
-            <img src="images/gallery2.jpg" alt="Gallery Image 2">
-            <figcaption>Menu Kopi Spesial Kami</figcaption>
+            <img src="images/pexels-quang-nguyen-vinh-222549-2159129.jpg" alt="Gallery Image 2">
+            <figcaption>Barista</figcaption>
         </figure>
         <figure>
-            <img src="images/gallery3.jpg" alt="Gallery Image 3">
+            <img src="images/pexels-hillaryfox-1615816.jpg" alt="Gallery Image 3">
             <figcaption>Acara Komunitas di Kopi Santai Caffee</figcaption>
         </figure>
         <figure>
-            <img src="images/gallery4.jpg" alt="Gallery Image 4">
+            <img src="images/pexels-rdne-10375864.jpg" alt="Gallery Image 4">
             <figcaption>Tim Kami yang Ramah dan Profesional</figcaption>
         </figure>
         <figure>
-            <img src="images/gallery5.jpg" alt="Gallery Image 5">
+            <img src="images/pexels-barcelona-albertus-986500-1924951.jpg" alt="Gallery Image 5">
             <figcaption>Proses Pembuatan Kopi yang Teliti</figcaption>
         </figure>
         <figure>
-            <img src="images/gallery6.jpg" alt="Gallery Image 6">
+            <img src="images/pexels-vardarious-3888048.jpg" alt="Gallery Image 6">
             <figcaption>Area Outdoor yang Nyaman di Kopi Santai Caffee</figcaption>
         </figure>
     </section>
@@ -102,8 +108,37 @@
         <h3>Alamat Kami:</h3>
         <address>Jl. Kopi No. 123, Jakarta, Indonesia</address>
     </div>
-    <footer>
-        <p>&copy; 2024 Kopi Santai Caffee. All rights reserved.</p>
+    <footer class="flex flex-row justify-center">
+        <div class="contacts">
+            <address>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Alamat: Jl. Raya No. 1, Jakarta, Indonesia</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Telepon: +62 123-456-7890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: 0oE7y@example.com</p>
+                </div>
+            </address>
+        </div>
+        <div class="operating-hours">
+            <h3>Jam Operasional:</h3>
+            <p>Senin - Jumat: 09:00 - 22:00</p>
+            <p>Sabtu - Minggu: 10:00 - 23:00</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Kopi Santai. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
