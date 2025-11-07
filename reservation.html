@@ -3,10 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="Reservation Info">
-        <section id="Reservation Info">
+    <header>
+        <h1>Reservation at Kopi Santai Caffee</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="ReservationInfo">
+        <section id="ReservationInfoSection">
         <h1>Reservasi Meja</h1>
         <p>Untuk melakukan reservasi meja di Kopi Santai Caffee, silakan ikuti langkah-langkah berikut:</p>
         <ul>
@@ -17,34 +30,34 @@
         </ul>
     </div>
 
-    <div id="Reservation Form">
-        <section id="Reservation Form">
+    <div class="ReservationForm">
+        <section id="ReservationFormSection">
         <h2>Formulir Reservasi</h2>
         <form action="/submit_reservation" method="post">
             <h3>Personal Information</h3>
             <label for="name">Nama Lengkap:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name" required class="nama"><br><br>
             <label for="phone">Nomor Telepon:</label><br>
-            <input type="tel" id="phone" name="phone" required><br><br>
+            <input type="tel" id="phone" name="phone" required class="telpon"><br><br>
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" required class="email"><br><br>
             <h3>Reservation Details</h3>
             <label for="date">Tanggal Reservasi:</label><br>
-            <input type="date" id="date" name="date" required><br><br>
+            <input type="date" id="date" name="date" required class="tanggal"><br><br>
             <label for="time">Waktu Reservasi:</label><br>
-            <input type="time" id="time" name="time" required><br><br>
+            <input type="time" id="time" name="time" required class="waktu"><br><br>
             <label for="guests">Jumlah Tamu:</label><br>
-            <input type="number" id="guests" name="guests" min="1" required><br><br>
+            <input type="number" id="guests" name="guests" min="1" required class="jumlahTamu"><br><br>
             <label for="table type">Tipe Meja:</label><br>
-            <select id="table type" name="table type" required>
+            <select id="table type" name="table type" required class="tipeMeja">
                 <option value="indoor">Indoor</option>
                 <option value="outdoor">Outdoor</option>
             </select><br><br>
             <h3>Additional Requests</h3>
-            <textarea id="requests" name="requests" rows="4" cols="50" placeholder="Masukkan permintaan tambahan di sini..."></textarea><br><br>
+            <textarea id="requests" name="requests" rows="4" cols="50" placeholder="Masukkan permintaan tambahan di sini..." class="requestBox"></textarea><br><br>
             <label for="terms & agreement">Saya setuju dengan syarat dan ketentuan yang berlaku.</label>
             <input type="checkbox" id="terms & agreement" name="terms & agreement" required><br><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="submitButton">
         </form>
         <aside>
             <h3>Catatan Penting</h3>
@@ -56,6 +69,8 @@
             </ul>
         </aside>
     </div>
-    
+    <footer>
+        <p>&copy; 2024 Kopi Santai Caffee. All rights reserved.</p>
+    </footer>
 </body>
 </html>
